@@ -60,7 +60,7 @@ function post($url, $params) {
     // this requires POST so add the fields to the POST body
     if ($method == 'POST') {
       curl_setopt($ch, CURLOPT_URL, $url);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+      curl_setopt($ch, CURLOPT_POSTFIELDS, $qs);
       curl_setopt($ch, CURLOPT_POST, true);
       curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-type: application/x-www-form-urlencoded"));
       curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Length: $content_length"));
