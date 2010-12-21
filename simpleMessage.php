@@ -53,7 +53,7 @@ function post($url, $params) {
         $qs .= '&'. urlencode($key) . '=' . urlencode($value);
       }
     }
-    $content_lengh = "".strlen($qs);
+    $content_length = "".strlen($qs);
     
     // Use curl to send the data to the URL
     $ch = curl_init();
