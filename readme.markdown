@@ -36,6 +36,8 @@ adding the following query string variables
  * to - the phone number (including country code) to send to
  * msg - the message to send
  * network - (optional) the network to send to. Defaults to SMS
+ * from - (optional) if you have multiple Tropo numbers, which one to send 
+from. **Note** this must be a Tropo number. Carriers reject spoofed SMS messages.
 
 Since this is a URL, all values should be URL encoded. 
 

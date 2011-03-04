@@ -24,7 +24,11 @@ $network = isset($network) ? $network : 'SMS';
 
 if ($action == 'create') {
   // this is an outgoing message
-  message($msg, array('to' => $to, 'network' => $network));  
+  $opts = array('to' => $to, 'network' => $network);
+  if (!empty($from)) {
+    $opts['from'] = $from;
+  }
+  message($msg, $opts);  
 } else {
   // this is an incoming message, capture output.
   answer();
