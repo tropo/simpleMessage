@@ -9,9 +9,16 @@ a URL of your choosing.
 Adding a Tropo application
 --------------------------
 
-Create a new Tropo Scripting application and copy 
-simpleMessage.php in as a hosted file on Tropo. Add a US phone 
-number and make note of your messaging token.
+After you create or log into your Tropo account, click 
+**Create New Application** and choose **Tropo Scripting**.  
+For the URL, either upload this code to your web server as 
+*simpleMessage.tphp* (note the "t" in the extension) and then
+give Tropo the URL to that file, or if you'd like to host the file
+on Tropo's server, choose **Hosted File**  and then **Create a 
+new hosted file...** and then copy and paste the contents of 
+simpleMessage.php into the text box. 
+
+Add a US phone number and make note of your messaging token.
 
 Sending
 --------
