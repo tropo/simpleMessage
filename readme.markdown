@@ -6,11 +6,16 @@ to send text messages simply by requesting a URL. You can also
 get replies or other incoming messages sent as form posts to
 a URL of your choosing.
 
+If you want to read more about why Simple Message exists, how to 
+use it, and see a screencast on how to install it, check out 
+[*Simple POST and GET interface to Tropo SMS* on the Tropo blog](http://blog.tropo.com/2010/11/19/simple-post-and-get-interface-to-tropo-sms/).
+
 Adding a Tropo application
 --------------------------
 
 After you create or log into your Tropo account, click 
 **Create New Application** and choose **Tropo Scripting**.  
+
 For the URL, either upload this code to your web server as 
 *simpleMessage.tphp* (note the "t" in the extension) and then
 give Tropo the URL to that file, or if you'd like to host the file
