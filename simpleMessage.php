@@ -26,7 +26,7 @@ if ($action == 'create') {
   // this is an outgoing message
   $opts = array('to' => $to, 'network' => $network);
   if (!empty($from)) {
-    $opts['from'] = $from;
+    $opts['callerID'] = $from;
   }
   message($msg, $opts);  
 } else {
